@@ -1,0 +1,260 @@
+/* Importação da fonte */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    /* Padrão geral do CSS */
+    /* incorporar padding dentro de uma caixa */
+    box-sizing: border-box;
+}
+
+html, body{
+    /* Padrão geral para CSS */
+    /* Espaçamento externo */
+    margin: 0;
+    /* Fonte externa do google fontes */
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+#navbar{
+    /* Display para deixar o texto no modelo de flaxbox */
+    display: flex;
+    /* Deixar no modelo de linha definir item flexivel*/
+    flex-flow: row wrap;
+    /* Altura de 100 pixels */
+    height: 100px;
+    /* background-color: aquamarine; */
+    /* Ajustar o texto ao centro */
+    justify-content: center;
+    /* Ajustar os itens internos ao centro */
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+
+
+.logo{
+    /* Fonte externa */
+    font-family: 'Lobster Two', sans-serif;
+    /* Tamanho inicial do elemento */
+    flex: 20%;
+    /* border: 1px solid red; */
+    /* Espaçamento interno a esquerda */
+    margin-left: 10%;
+    text-align: left;
+}
+
+.logo h1{
+    font-family: 'Lobster Two', sans-serif;
+    color: #ff0000;
+    font-size: 36px;
+}
+
+.menu{
+    flex: 70%;
+    /* border: 1px solid red; */
+    /* Texto à direita*/
+    text-align: right;
+    /* Espaçamento interno */
+    padding: 20px;
+}
+
+.menu a{
+    /* Cor do texto */
+    color: #ff0000;
+    
+}
+
+/* Quando usar o mause acima do elemento */
+.menu a:hover{
+    /* Cor do texto */
+    color: #FFA500;
+    border-top: 4px solid #FF0000;
+}
+
+#id-btn{
+    background-color: #FF0000;
+    /* Espaçamento interno pra cima e p/ o lado */
+    padding: 10px 25px;    
+    color: white;
+    border-radius: 5px;
+    /* Espaçamento a direita */
+    margin-right: 10%;
+    /* Espaçamento à esquerda */
+    margin-left: 5%;
+}
+
+#id-btn:hover{
+    /* Remover a borda que está no elemento */
+    border: none;
+    background-color: #FFA500;
+}
+
+/* Parte de cima do projeto  */
+.header{
+    padding: 100px;
+    height: auto;
+    background-color: white;
+    /* Modo de display para ter acesso ao  */
+    display: flex;
+    /* O elemento do conteiner se organiza */
+    flex-flow: row wrap;
+    /* Elemento se organizado ao centro */
+    justify-content: center;
+    align-items: center;
+}
+
+.headline{
+    flex: 40%;
+    margin-left: 10%;
+    /* border: 1px solid black; */
+}
+
+.headline h2{
+    font-size: 20px;
+    font-weight: 900;
+    color: #FF0000;
+    padding: 0;
+    margin: 0;
+}
+
+.headline p{
+    color: gray;
+    text-align: left;
+}
+
+.contact_btn{
+    display: inline-block;
+    background-color: #FFA500;
+    padding: 20px;
+    color: white;
+    /* Transformando um texto em letra maiúscula */
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.contact_btn:hover{
+    background-color: #fd9801;
+}
+
+.img-headline{
+    margin-right: 10%;
+    flex: 40%;
+    text-align: center;
+}
+
+/* Conteudo central */
+section{
+    display: inline-block;
+    text-align: center;
+    margin-top: 80px;
+    /* border: 1px solid black; */
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto;
+    padding: 5%;
+    /* width: 90%; */
+}
+
+section h2{
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    color: #FF0000;
+}
+.servicos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.card img {
+    width: 100%; /* Faz a imagem ocupar 100% da largura do card */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Mantém o mesmo arredondamento do card */
+    object-fit: cover; /* Garante que a imagem se ajuste ao card, cortando se necessário */
+    margin-bottom: 10px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 1px solid pink;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.card:hover{
+    background-color: #f64104;
+    color: white;
+    padding: 40px
+}
+
+.card:hover .card-text{
+    display: none;
+}
+
+.card:hover .texto-oculto{
+    display: block;
+}
+
+.card img :hover{
+    display: none;
+}
+
+.texto-oculto{
+    display: none;
+}
+ 
+footer{
+    margin-top: auto;
+    height: 400px;
+    background-image:linear-gradient(180deg,#FFA500,#FF0000,black);
+    text-align: center;
+    border-top: solid 2px #f64104;
+}
+
+
+.logo-rodape{
+    padding: 100px;
+}
+
+.agencia-h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    color: white;
+}
+
+.logo-rodape p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.instagram{
+    bottom: 10px;/*Posicionamento abaixo*/
+    right: 10px; /*Posicionamento a direita*/
+    color: white;
+    position: fixed; /*Posicionamento fixo na tela*/
+}
+
+.suporte{
+    bottom: 10px;/*Posicionamento abaixo*/
+    right: 60px; /*Posicionamento a direita*/
+    color: white;
+    position: fixed; /*Posicionamento fixo na tela*/
+}

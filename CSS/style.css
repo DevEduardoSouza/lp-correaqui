@@ -14,10 +14,21 @@
 html, body{
     /* Padrão geral para CSS */
     /* Espaçamento externo */
+    overflow-y: hidden;
     margin: 0;
     /* Fonte externa do google fontes */
     font-family: 'Roboto', sans-serif;
     height: 100%;
+}
+
+body {
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
 }
 
 #navbar{
@@ -151,15 +162,10 @@ html, body{
 
 /* Conteudo central */
 section{
-    display: inline-block;
     text-align: center;
-    margin-top: 80px;
-    /* border: 1px solid black; */
     margin-left: 5%;
     margin-right: 5%;
     height: auto;
-    padding: 5%;
-    /* width: 90%; */
 }
 
 section h2{
@@ -224,8 +230,8 @@ section h2{
 footer{
     margin-top: auto;
     height: 400px;
-    background-image:linear-gradient(180deg,#FFA500,#FF0000,black);
-    text-align: center;
+   /* background-image:linear-gradient(180deg,#FFA500,#FF0000,black);
+    */text-align: center;
     border-top: solid 2px #f64104;
 }
 

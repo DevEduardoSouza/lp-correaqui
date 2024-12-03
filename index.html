@@ -1,112 +1,188 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projeto final de HTML e CSS"> 
-    <meta name="keywords" content="Agência Digital, HTML , CSS">
-    <link rel="shortcut icon" href="imagens-PA/CorreAqui.ico" type="image/x-icon">
-    <title>Corre Aqui! DEv</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/responsivo.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-
-<body>
-
-   <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top w-100">
-        <div class="container-fluid d-flex align-items-center">
-            <div class="logo d-flex align-items-center">
-                <img src="imagens-PA/Logo.jpeg" alt="logo" style="height: 50px; margin-right: 10px;">
-                <h1 class="mb-0">Corre Aqui!</h1>
-            </div>
-            <div class="menu ms-auto">
-                <a id="id-btn" href="https://www.instagram.com/correaqui_oficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="btn btn-primary">Fale conosco</a>
-            </div>
-        </div>
-    </nav>
-
-
-    <header class="header container-fluid">
-        <div class="row align-items-center">
-            <div class="headline col-lg-7 col-md-8 col-sm-12 text-center text-md-start">
-                <h2 class="mb-3" style="letter-spacing: 0.2em; font-size: 1.5rem;">Você achou o melhor</h2>
-                <h2 style="font-size: 4rem;">Aplicativo de Promoções!</h2>
-                <p class="mt-4">Baixe nosso aplicativo e descubra ofertas exclusivas que você só encontra aqui!</p>
-                <p class="font-weight-bold mt-3">Por que baixar?</p>
-                <ul class="list-unstyled">
-                    <li>
-                        <p>Descontos imperdíveis em seus produtos favoritos!</p>
-                    </li>
-                    <li>
-                        <p>Notificações em primeira mão sobre promoções relâmpago.</p>
-                    </li>
-                    <li>
-                        <p>Facilidade para comprar e economizar com apenas alguns cliques.</p>
-                    </li>
-                </ul>
-                <div class="d-flex mt-4">
-                    <a href="#" class="btn btn-secondary me-2" style="pointer-events: none;" disabled>
-                        <img src="imagens-PA/google_play.png" alt="Google Play" style="height: 40px; margin-right: 10px;">
-                        <span>Em breve</span>
-                    </a>
-                    <a href="#" class="btn btn-secondary" style="pointer-events: none;" disabled>
-                        <img src="imagens-PA/apple_store.png" alt="Apple Store" style="height: 40px; margin-right: 10px;">
-                        <span>Em breve</span>
-                    </a>
-                </div>
-            </div>
-        </div>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsividade.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <title>Corre Aqui!</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="wrapper">
+      <div class="brand">
+        <img src="./assets/imgs/Logo-removebg-preview.png" alt="Logo da Corre Aqui!" />
+        <span>Corre Aqui!</span>
+      </div>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Quem Somos</a></li>
+        <li><a href="#">Áreas de Atuação</a></li>
+        <li><a href="#">Equipe</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+      <div class="btn-mobile hide">
+        <i class="bi bi-list"></i>
+      </div>
     </header>
+    <!-- END HEADER -->
 
-    <section>
-        <h2>Todas as promoções da sua cidade direto na sua mão!</h2>
-        <div class="servicos">
-            <div class="card">
-                <img src="imagens-PA/mapa2.jpeg" alt="img web">
-                <div class="card-text">
-                    <h3>Mapa de Ofertas</h3>
-                    <p>O mapa de ofertas é o coração do aplicativo, proporcionando uma experiência visual e interativa para os usuários. Com ele, é possível visualizar, em tempo real, as melhores promoções e descontos disponíveis em diferentes estabelecimentos na região. </p>
-                </div>
-                <div class="texto-oculto">
-                    <h3>Mapa de Ofertas</h3>
-                    <p>Cada oferta é marcada no mapa, permitindo que os usuários naveguem facilmente pelas opções, filtrando por categorias de produtos ou proximidade. Essa funcionalidade transforma a busca por ofertas em uma experiência prática e divertida, garantindo que os usuários sempre encontrem as melhores oportunidades perto de onde estão.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="imagens-PA/TelaLogin.jpeg" alt="imagem">
-                <div class="card-text">
-                    <h3>Tela Inicial</h3>
-                    <p>A tela inicial do aplicativo é o ponto de partida para uma experiência envolvente e cheia de vantagens. Nela, os usuários encontram um mapa interativo de ofertas, destacando promoções e descontos disponíveis em diferentes locais próximos.</p>
-                </div>
-                <div class="texto-oculto">
-                    <h3>Tela Inicial</h3>
-                    <p> Com uma navegação intuitiva e visual atraente, a tela inicial convida os usuários a explorarem as melhores ofertas na sua região, facilitando o acesso a produtos e serviços a preços imbatíveis.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="imagens-PA/Home.jpeg" alt="iamegem-md">
-                <div class="card-text">
-                    <h3>Como Funcionaria?</h3>
-                    <p>Ao clicar em uma oferta no mapa, o usuário é imediatamente redirecionado para uma página detalhada do produto em oferta, diretamente na loja parceira. Nesta página, ele encontrará todas as informações necessárias, como descrição do produto, preço com desconto, fotos, e avaliações</p>
-                </div>
-                <div class="texto-oculto">
-                    <h3>Como Funcionaria?</h3>
-                    <p>Além disso, o usuário poderá verificar a disponibilidade e finalizar a compra com poucos cliques. Essa navegação fluida entre o mapa de ofertas e a página do produto garante uma experiência de compra rápida e conveniente, conectando os usuários diretamente às melhores promoções.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="bg-secondary text-white p-3">
-        <div class="logo-rodape">
-            <h1 class="agencia-h1">Corre Aqui</h1>
-            <p>Seja Rápido. Economize mais. Não perca tempo. Nem dinheiro!</p>
-        </div>
-        <a class="suporte" href="#"><i class="bi bi-telephone"></i></a>
-        <a class="instagram" href="https://www.instagram.com/correaqui_oficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="bi bi-instagram"></i></a>
-    </footer>
+    <!-- MAIN -->
 
-   
-</body>
+    <main>
+      <section class="hero-section wrapper">
+        <div class="content-text">
+          <div class="text">
+            <h1>A melhor forma de achar promoções.</h1>
+            <p>
+              Vai sair para fazer compras? Que tal ter um mapa que mostre onde estão as melhores promoções da sua
+              cidade?
+            </p>
+          </div>
+
+          <div class="store">
+            <div>
+              <img src="./assets/imgs/google_play.png" alt="" />
+              <span>Google Play</span>
+            </div>
+            <div>
+              <img src="./assets/imgs/apple_store.png" alt="" />
+              <span>App Store</span>
+            </div>
+          </div>
+
+          <div class="recommendations">
+            <div class="recommendation">
+              <div class="icon-c">
+                <i class="bi bi-chat-dots"></i>
+              </div>
+              <span>"Esse aplicativo é muito bomaaaaaaa" - Maria Alves</span>
+            </div>
+            <!-- <div class="recommendation">
+                <img src="" alt="" />
+                <span>"Esse aplicativo é muito bom" - Maria Alves</span>
+              </div>
+              <div class="recommendation">
+                <img src="" alt="" />
+                <span>"Esse aplicativo é muito bom" - Maria Alves</span>
+              </div> -->
+          </div>
+        </div>
+        <div class="imgs-phones-screen">
+          <div class="cricle"></div>
+          <img class="screen-phone elemento-jitter" id="screen-phone-1" src="assets/imgs/t-iphone4.png" alt="" />
+          <img class="screen-phone" id="screen-phone-2" src="assets/imgs/t-iphone2.png" alt="" />
+          <div class="icon icon-geo">
+            <i class="bi bi-geo-alt-fill"></i>
+          </div>
+          <div class="icon icon-bell">
+            <i class="bi bi-bell-fill"></i>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits-section">
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+        <div class="benefits-container wrapper">
+          <div class="text-init">
+            <h2><span>Vantagens</span> Exclusivas Para Você</h2>
+            <p>
+              Com o "Corre Aqui", você nunca mais vai perder uma promoção! Baixe o aplicativo e tenha as ofertas mais
+              incríveis ao seu redor, diretamente no seu bolso.
+            </p>
+          </div>
+
+          <div class="box">
+            <div class="benefits-content benefits-content-left">
+              <div class="benefits">
+                <div class="icon">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <span>Promoções Personalizadas</span>
+                <p>Receba ofertas perto de você, baseadas na sua localização e preferências.</p>
+              </div>
+              <div class="benefits">
+                <div class="icon">
+                  <i class="bi bi-bell"></i>
+                </div>
+                <span>Alertas em Tempo Real</span>
+                <p>Ative notificações para nunca perder uma promoção em sua cidade.</p>
+              </div>
+            </div>
+            <div class="screen-phone-benefits">
+              <div class="cricle cricle-benefits">
+                <img src="assets/imgs/t-iphone2.png" alt="" />
+              </div>
+            </div>
+            <div class="benefits-content benefits-content-right">
+              <div class="benefits">
+                <div class="icon">
+                  <i class="bi bi-cursor"></i>
+                </div>
+                <span>Fácil de Usar</span>
+                <p>Interface intuitiva para encontrar promoções com poucos cliques.</p>
+              </div>
+              <div class="benefits">
+                <div class="icon">
+                  <i class="bi bi-star"></i>
+                </div>
+                <span>Promoções Exclusivas</span>
+                <p>Descontos especiais só para usuários do "Corre Aqui".</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-use">
+        <div class="container-img">
+          <img src="assets/imgs/t-iphone4.png" alt="" />
+        </div>
+        <div class="how-use-container">
+          <h2>Como Usar o "Corre Aqui"</h2>
+
+          <div class="steps">
+            <div class="line-container">
+              <div class="line"></div>
+              <div class="line-grenn"></div>
+            </div>
+            <div class="steps-content">
+              <div class="step">
+                <div class="number" id="number-1">1</div>
+                <div class="text">
+                  <h3>Baixe o App</h3>
+                  <p>Comece baixando o "Corre Aqui" na App Store ou Google Play. É rápido e gratuito!</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="number">2</div>
+                <div class="text">
+                  <h3>Ative a localização</h3>
+                  <p>
+                    Permita o acesso à sua localização para que possamos encontrar as melhores promoções próximas de
+                    você.
+                  </p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="number">3</div>
+                <div class="text">
+                  <h3>Veja as promoções ao seu redor</h3>
+                  <p>
+                    Pronto! Agora você pode visualizar todas as ofertas e promoções disponíveis perto de você e
+                    aproveitar.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- END MAIN -->
+  </body>
 </html>
